@@ -1,1 +1,6 @@
 /* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Mono:wght@100&display=swap');
+
+h1, h2 {
+    font-family: 'Aboreto', cursive;
+}
