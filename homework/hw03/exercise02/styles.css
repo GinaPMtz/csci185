@@ -46,15 +46,35 @@ code {
  background-color: #EEEEEE;
 }
 
+#card1 img{
+    border-radius: 50%;
+  }
+
+#card2{
+    background-color: #bce5d6;
+}
+
 #card3{
 background-color: #EEEEEE;
+}
+
+#card3 img{
+    border-radius: 50%;
+  }
+
+  #card4{
+    background-color: #bce5d6;
 }
 
 #card5{
     background-color: #EEEEEE;
 }
 
-#card2{
+#card5 img{
+    border-radius: 50%;
+  }
+
+#card6{
     background-color: #bce5d6;
 }
 
@@ -63,4 +83,12 @@ footer {
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+}
+
+* {
+font-family: 'Courier New', Courier, monospace;
+}
+
+p.footer{
+    font-weight: bold;
 }
