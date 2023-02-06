@@ -89,3 +89,10 @@ footer {
 font-family: 'Courier New', Courier, monospace;
 }
 
+main>p{
+    font-weight: bold;
+}
+
+footer>p {
+    font-weight: bold;
+}
