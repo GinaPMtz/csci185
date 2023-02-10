@@ -50,7 +50,7 @@ main{
     min-height: 55vh;
 }
 
-#main landing{
+.landing{
     background: white;
     padding: 50px 15vw 100px 15vw;
     display: grid;
@@ -64,13 +64,14 @@ main{
 }
 
 .landing h1{
-    font-family: Malamondo;
-font-weight: 400;
-text-transform: uppercase;
-text-align: center;
+    color: black;
+line-height: 1.2em;
+font-size: 1.7em;
+font-family: Malamondo-Alt;
+
 }
 
-.landing h2{
+h1,h2{
     font-family: Malamondo;
 font-weight: 400;
 text-transform: uppercase;
