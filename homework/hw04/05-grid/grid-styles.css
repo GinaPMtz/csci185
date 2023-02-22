@@ -7,6 +7,40 @@ body {
 .grid-container {
     height: 100vh;
     /* you will add addition rules for the container here  */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 /* create your child rules here:  */
+
+div{
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-1{
+grid-column-start: 1;
+grid-column-end: span 3;
+}
+
+.item-2{
+    grid-column-start:3 ;
+    grid-column-end: span 5;
+}
+
+.item-3{
+    grid-column-start:1;
+    grid-column-end:span 3;
+}
+
+.item-4{
+grid-column-start: 3;
+grid-column-end: span 5;
+}
+
+.item-5{
+grid-column-start: 1;
+grid-column-end: span 3;
+}
