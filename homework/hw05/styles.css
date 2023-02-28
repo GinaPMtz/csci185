@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+ul.horizontal-list li{
+    display: flex;
+    list-style:none;
+    display: inline-block;
+    padding:2px;
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+}
+
+ul a{
+   color: #011936;
+   text-decoration: none;
+}
+
+header img{
+    border-radius: 50%;
+}
+
+header{
+    background-color: #D7BCE8;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+h1, h2{
+    font-family: 'Roboto Mono', monospace;
+    color:#011936;
+}
+
+#about{
+display: flex;
+justify-content:left;
+padding: 20px;
+}
+
+.about p{
+    margin-left: auto;
+}
