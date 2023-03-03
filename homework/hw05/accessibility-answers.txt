@@ -1,14 +1,17 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I would have to add image descriptions, and additional text support (for people with visibility disabilities I believe)
+I wuld also need to add labels to some of the text boxes, because otherwise the computer cannot tell what they are supposed
+to be used for.
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+No, because the CSS is what designed most of the page, so if I turn it off it would look widely different and that would
+make it less readable
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+By using the space bar, you can move from section to section. however, it does not allow for the buttons or certain links to work.
 
 
 

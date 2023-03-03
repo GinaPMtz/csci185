@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- don't forget to add the lang attribute! -->
-<html>
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
     </nav>
 
         <div>
-            <img id="profile-pic" src="images/profile.jpg" />
+            <img id="profile-pic" src="images/profile.jpg" alt="profile picture"/>
             <h1>Welcome to my portfolio website</h1>
         </div>
     </header>
@@ -67,11 +67,11 @@
         <div class="contact-details">
             <form method="post" action="#">
                 <div class="row row1">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <input type="text" name="name" id="name" placeholder="Name" aria-labelledby="name"/>
+                    <input type="email" name="email" id="email" placeholder="Email" aria-labelledby="email" />
                 </div>
                 <div class="row">
-                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                    <textarea name="message" id="message" placeholder="Message" aria-labelledby="message" rows="4"></textarea>
                 </div>
                 <div class="row">
                     <input id="submit" type="submit" value="Send Message">
