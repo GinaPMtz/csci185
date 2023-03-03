@@ -36,6 +36,7 @@ header img{
 header{
     background-color: #D7BCE8;
     text-align: center;
+    padding: 50px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
@@ -45,11 +46,112 @@ h1, h2{
 }
 
 #about{
-display: flex;
+display:flex;
+flex-direction: column;
 justify-content:left;
-padding: 20px;
+padding: 100px;
 }
 
-.about p{
-    margin-left: auto;
+/*h2 p{
+    display: flex;
+    justify-content: left;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+p{
+    font-family: 'Golos Text', sans-serif;
+}
+
+#projects{
+    padding-left: 180px;
+    padding-right: 80px;
+}
+
+.project-holder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    background-color: lightgray;
+    align-items: left;
+}
+
+/*.contact-details{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 50px;
+    
+}
+
+#contact-info{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 10px;
+
+}*/
+
+#contact{
+    padding-left: 180px;
+    padding-right: 80px;
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #D7BCE8;
+    padding: 50px;
+    height: 70vh;
+}
+
+#contact-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content:right;
+    background-color: aquamarine;
+    display:inline-block
+}
+
+.card{
+    padding: 70px;
+    margin: 20px;
+}
+
+footer{
+    background-color: lightslategray;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    nav{
+        display: flex;
+        justify-content:center;
+    }
+
+    .project-holder{
+        display: grid;
+        grid-template-columns:1fr;
+        column-gap: 10px;
+        background-color: lightgray;
+        align-items:left;
+    }  
+
+    .card{
+        border: 18px solid;
+    }
+
+     .card img {
+        width: 100%;
+     }
+
+     .contact-details{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #D7BCE8;
+        padding: 50px;
+        height: 70vh;
+    }
 }
