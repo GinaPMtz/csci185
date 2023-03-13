@@ -1,8 +1,74 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body *{
+    box-sizing:border-box;
+}
+
 body{
-    background-color: #9EBD6E;
+    margin: 0;
+    background-color: #66D0FF;
+}
+
+main>section{
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
-    background-color: #D1B3C4;
-    padding:15px;
+    display: flex;
+    justify-content: center;
+    background-color: #DE4D86;
+    padding: 50px;
+    border-radius: 50%;
 }
+
+/*border radius makes it round (or oval)
+make colors flow better
+make different pages for all sections */
+
+#tutorials{
+padding: 25px;
+}
+
+#homework{
+
+}
+
+#inspiration{
+  
+}
+
+#class-exercises{
+
+}
+
+#quizzes{
+
+}
+
+.cloud{ 
+    width:350px;
+    height:120px;
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+ }
+
+ .cloud::after{
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+}
+.cloud::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
+ 
