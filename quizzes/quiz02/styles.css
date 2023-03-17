@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
 body * {
     box-sizing: border-box;
 }
@@ -35,8 +37,6 @@ nav a{
 header img, footer img {
     width: 200px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 h1, h2, h3{
     font-family: 'Passion One';
