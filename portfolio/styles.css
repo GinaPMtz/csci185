@@ -38,7 +38,7 @@ h1,h2,h3, ul, p {
 
 nav{
     display:flex;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 ul a{
@@ -55,14 +55,14 @@ ul a{
  }
 
  #contact{
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 400px;
+    padding-right: 400px;
     text-align: center;
 }
 
 .contact-details{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     border: 4px solid #FDFF85;
     padding: 30px;
     height: 50vh;

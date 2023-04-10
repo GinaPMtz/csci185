@@ -17,6 +17,10 @@ let idx = 0;
     (1) display the new image inside of the .current-photo container, and 
     (2) update the caption inside of the .caption paragraph
 */
+
+//TARGET IMG ELEMENT ISIDER OF .CURRENT-PHOTO CONTAINER
+//UPDATE CAMPTIONMINSIDE .CAPTION PARAGRAPH
+
 function showImage() {
     console.log('Show image');
     console.log(idx);
@@ -32,15 +36,14 @@ function showImage() {
    the array, set idx to 0.
 */
 function forward() {
-    console.log('forward');
+    console.log(idx);
 
-    showImage()
     if(idx==photos.length-1){
         idx=0;
     } else {
         idx +=1;
     }
-
+    showImage()
 }
 
 
@@ -51,12 +54,14 @@ function forward() {
    one less than the length of the array.
 */
 function back() {
-    console.log('back');
+    console.log(idx);
 
-    showImage()
-    if(idx==photos.length+1){
-        idx=0;
+    
+    if(idx==0){
+        console.log('end of the line. setting idx back to zero')
+        idx= photos.length-1;
     } else {
-        idx +=1;
+        idx -=1;
     }
+    showImage()
 }
