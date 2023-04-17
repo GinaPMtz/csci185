@@ -24,6 +24,13 @@ header img{
     align-items:flex-end;
 }
 
+/*img{
+    display: flex;
+    justify-content: end;
+    width: 100px; 
+    height: auto;
+}*/
+
 ul.horizontal-list li{
     display: flex;
     list-style:none;
@@ -35,6 +42,11 @@ ul.horizontal-list li{
 h1,h2,h3, ul, p {
     font-family: 'Playfair Display', serif;
 }
+
+/*h1{
+   padding: 20px; 
+   text-align:center
+}*/
 
 nav{
     display:flex;
@@ -75,32 +87,18 @@ footer{
     text-align: center;
 }
 
-
-
-/*html{
-    scroll-behavior: smooth;
+main{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 10px;
 }
 
-body *{
-    box-sizing:border-box;
+section{
+    display:grid;
+    grid-template-columns: auto 160px;
+    border: 4px solid #FDFF85;
+    border-radius: 6px;
+    padding: 30px;
 }
 
-#navbar{
-    padding: 20px;
-    background-color: #89B0AE;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-ul{
-    display: flex;
-    list-style-type: none;
-    column-gap: 5px;
-}
-
-footer{
-    padding: 50px;
-    text-align: center;
-    background-color: #89B0AE;
-}*/
