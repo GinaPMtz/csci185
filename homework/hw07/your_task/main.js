@@ -17,13 +17,13 @@ async function getTracks (term) {
     const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
     data = await fetch(url).then(response => response.json());
     console.log (data);
-    for (let i = 0; 1 < 5; i++){
+    for (let i = 0; i < 5; i++){
         const track = data[i];
 
         const template = `
         <section class="track-item preview" onclick="loadTrack('${track.id}')">
-        <img src="${track.album.image_url}">
-        <i class="fas play-track fa-play" aria-hidden="true"></i>
+        <img src="${track.album.image_url}" alt="track image">
+        <i class="fast play-track fa-play" aria-hidden="true"></i>
         <div class="label">
             <h2>${track.name}</h2>
             <p>
@@ -37,26 +37,27 @@ async function getTracks (term) {
 }
 
 async function getAlbums (term) {
-    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
     data = await fetch(url).then(response => response.json());
     console.log (data);
-    for(let i = 0; i < 5; i++) {
-        const track = data[i];
+    for(let i = 0; i < data.length; i++) {
+        const album = data[i];
         //create a template
         const template = `
-        <section class="track-item preview">
-        <img src="${track.album.image_url}">
-        <i class="fas play-track fa-play" aria-hidden="true"></i>
-        <div class="label">
-            <h2>${track.name}</h2>
-            <p>
-                ${track.artist.name}
-            </p>
+        <section class="album-card" id="${album.id}">
+    <div>
+        <img src="${album.image_url}" alt="album image">
+        <h2>${album.name}</h2>
+        <div class="footer">
+            <a href="${album.spotify_url}" target="_blank">
+                view on spotify
+            </a>
         </div>
-    </section>
+    </div>
+</section>
     `;
         //insert the template into the DOM
-        document.querySelector('#tracks').innerHTML += template;
+        document.querySelector('#albums').innerHTML += template;
     }
 
 }
@@ -70,7 +71,7 @@ async function getArtist (term) {
     const template = `
     <section class="artist-card" id="${artist.id}">
     <div>
-        <img src="${artist.image_url}">
+        <img src="${artist.image_url}" alt="artist image">
         <h2>${artist.name}</h2>
         <div class="footer">
             <a href="${artist.spotify_url}" target="_blank">
