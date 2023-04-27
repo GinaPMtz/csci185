@@ -85,7 +85,7 @@ async function getArtist (term) {
     document.querySelector('#artist') .innerHTML = template;
 };
 
-function loadTrack (trackId){
+function loadTrack(trackId) {
     const template = `
     <iframe style="border-radius:12px" 
     src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator" 
